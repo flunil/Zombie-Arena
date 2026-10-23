@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/systems/upgrade_resource.gd" id="1_up"]
+
+[resource]
+script = ExtResource("1_up")
+upgrade_id = "armor_flat"
+display_name = "Flat Armor"
+description = "Absorbs 1 damage from every hit"
+icon_color = Color(0.7,0.75,0.85, 1)
+stackable = true
+rarity = 0

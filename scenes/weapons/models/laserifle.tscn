@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://crl016co56oyv"]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_range_stats.gd" id="wrs"]
+
+[ext_resource type="PackedScene" uid="uid://bbx1dsdhltcx8" path="res://assets/models/weapons/E-Gun 001 ⚡️ by Chris Ross - e2zZf4xZTcl.glb" id="1_e0wkb"]
+
+[node name="laserifle" type="Node3D" unique_id=912679828]
+script = ExtResource("wrs")
+range_slot = 8
+
+[node name="E-Gun 001 ⚡️ by Chris Ross - e2zZf4xZTcl" parent="." unique_id=914744310 instance=ExtResource("1_e0wkb")]
+transform = Transform3D(-8.742278e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.742278e-09, 0.0035566092, 0, -0.11641701)
+

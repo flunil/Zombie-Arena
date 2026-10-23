@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://chrc3kodtup6b"]
+
+[ext_resource type="Material" uid="uid://cowspplyfkffa" path="res://addons/constructive_telegraphs/resources/con_telegraph_next_pass.tres" id="1_5h36b"]
+
+[resource]
+next_pass = ExtResource("1_5h36b")
+albedo_color = Color(0.43137255, 0.48235294, 0.4862745, 1)

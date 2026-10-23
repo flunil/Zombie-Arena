@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://shaders/vfx/target_reticle.gdshader" id="1_reticle"]
+[ext_resource type="Texture2D" path="res://assets/vfx/reticle.png" id="2_tex"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_reticle")
+shader_parameter/reticle_texture = ExtResource("2_tex")
+shader_parameter/reticle_color = Color(1, 0.25, 0.2, 1)
+shader_parameter/glass_color = Color(1, 1, 1, 0)
+shader_parameter/reticle_emission = 2.5
+shader_parameter/ref_element_size = 1.0
+shader_parameter/ref_target_moa = 380.0

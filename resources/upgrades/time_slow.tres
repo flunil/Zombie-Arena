@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/systems/upgrade_resource.gd" id="1_up"]
+
+[resource]
+script = ExtResource("1_up")
+upgrade_id = "time_slow"
+display_name = "Time Slow"
+description = "-30% enemy speed for 5 seconds"
+icon_color = Color(0.95, 0.4, 0.75, 1)
+stackable = false
+rarity = 2

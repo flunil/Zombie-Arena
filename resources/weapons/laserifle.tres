@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_resource.gd" id="1_lasr"]
+
+[resource]
+script = ExtResource("1_lasr")
+weapon_id = "laserifle"
+display_name = "Laser Rifle"
+damage = 40.0
+fire_rate = 5.0
+ammo_max = 100
+reload_time = 2.0
+spread = 0.0
+max_range = 13
+bullet_speed = 120.0
+pierce = 10
+bullet_color = Color(0.3, 0.8, 1, 1)
+bullet_scale = 0.7
+unlock_wave = 12

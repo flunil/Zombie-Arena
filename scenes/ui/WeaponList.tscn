@@ -1,0 +1,300 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/systems/weapon_list.gd" id="1_wl"]
+[ext_resource type="Texture2D" path="res://assets/ui/Icons/Gem.png" id="2_gem"]
+[ext_resource type="Texture2D" path="res://assets/ui/Icons/Arrow_Left.png" id="3_back"]
+[ext_resource type="Texture2D" path="res://assets/ui/ui/Gemini_Generated_Image_8y1eap8y1eap8y1e1.png" id="4_bg"]
+
+[sub_resource type="Environment" id="Environment_1"]
+background_mode = 0
+ambient_light_source = 2
+ambient_light_color = Color(0.8, 0.82, 0.9, 1)
+ambient_light_energy = 0.85
+
+[node name="WeaponList" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_wl")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("4_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Dim" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.14)
+
+[node name="MainVBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/separation = 4
+
+[node name="TopBar" type="PanelContainer" parent="MainVBox"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+
+[node name="TopHBox" type="HBoxContainer" parent="MainVBox/TopBar"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="BackButton" type="Button" parent="MainVBox/TopBar/TopHBox"]
+custom_minimum_size = Vector2(48, 44)
+layout_mode = 2
+size_flags_vertical = 4
+icon = ExtResource("3_back")
+expand_icon = true
+
+[node name="TitleLabel" type="Label" parent="MainVBox/TopBar/TopHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.78, 0.2, 1)
+theme_override_font_sizes/font_size = 22
+text = "Weapon Workshop"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Resources" type="HBoxContainer" parent="MainVBox/TopBar/TopHBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 2
+
+[node name="GoldChip" type="PanelContainer" parent="MainVBox/TopBar/TopHBox/Resources"]
+custom_minimum_size = Vector2(100, 36)
+layout_mode = 2
+
+[node name="GoldHBox" type="HBoxContainer" parent="MainVBox/TopBar/TopHBox/Resources/GoldChip"]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="GoldIcon" type="Label" parent="MainVBox/TopBar/TopHBox/Resources/GoldChip/GoldHBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "💰"
+
+[node name="GoldValue" type="Label" parent="MainVBox/TopBar/TopHBox/Resources/GoldChip/GoldHBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.78, 0.2, 1)
+theme_override_font_sizes/font_size = 17
+text = "0"
+vertical_alignment = 1
+
+[node name="GemChip" type="PanelContainer" parent="MainVBox/TopBar/TopHBox/Resources"]
+custom_minimum_size = Vector2(80, 36)
+layout_mode = 2
+
+[node name="GemHBox" type="HBoxContainer" parent="MainVBox/TopBar/TopHBox/Resources/GemChip"]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="GemIcon" type="TextureRect" parent="MainVBox/TopBar/TopHBox/Resources/GemChip/GemHBox"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+texture = ExtResource("2_gem")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="GemValue" type="Label" parent="MainVBox/TopBar/TopHBox/Resources/GemChip/GemHBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.4, 1, 1)
+theme_override_font_sizes/font_size = 17
+text = "0"
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="MainVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.75)
+theme_override_font_sizes/font_size = 15
+text = "Prepare for the next wave"
+horizontal_alignment = 1
+
+[node name="Body" type="VBoxContainer" parent="MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+
+[node name="PreviewArea" type="PanelContainer" parent="MainVBox/Body"]
+layout_mode = 2
+
+[node name="PreviewVBox" type="VBoxContainer" parent="MainVBox/Body/PreviewArea"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="PreviewRow" type="HBoxContainer" parent="MainVBox/Body/PreviewArea/PreviewVBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="ModelPreview" type="SubViewportContainer" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow"]
+custom_minimum_size = Vector2(300, 210)
+layout_mode = 2
+size_flags_vertical = 4
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/ModelPreview"]
+disable_3d = false
+transparent_bg = true
+size = Vector2i(300, 210)
+render_target_update_mode = 4
+msaa_3d = 1
+own_world_3d = true
+
+[node name="Camera3D" type="Camera3D" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/ModelPreview/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5)
+fov = 35.0
+
+[node name="SunLight" type="DirectionalLight3D" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/ModelPreview/SubViewport"]
+rotation_degrees = Vector3(-35, 75, 0)
+light_energy = 1.35
+
+[node name="PreviewEnv" type="WorldEnvironment" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/ModelPreview/SubViewport"]
+environment = SubResource("Environment_1")
+
+[node name="WeaponHolder" type="Node3D" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/ModelPreview/SubViewport"]
+
+[node name="InfoPanel" type="PanelContainer" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow"]
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="InfoVBox" type="VBoxContainer" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/InfoPanel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="WeaponNameRow" type="HBoxContainer" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/InfoPanel/InfoVBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="WeaponIconSlot" type="PanelContainer" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/InfoPanel/InfoVBox/WeaponNameRow"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+
+[node name="WeaponIcon" type="Label" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/InfoPanel/InfoVBox/WeaponNameRow/WeaponIconSlot"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "🔫"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NameLabel" type="Label" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/InfoPanel/InfoVBox/WeaponNameRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.78, 0.2, 1)
+theme_override_font_sizes/font_size = 32
+text = "AK-47"
+vertical_alignment = 1
+
+[node name="LevelBadge" type="Label" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/InfoPanel/InfoVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.9)
+theme_override_font_sizes/font_size = 16
+text = "Overall Level 0/40"
+horizontal_alignment = 1
+
+[node name="BarOverlay" type="Control" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/InfoPanel/InfoVBox"]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="LevelBar" type="ProgressBar" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/InfoPanel/InfoVBox/BarOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+max_value = 100.0
+step = 0.1
+show_percentage = false
+
+[node name="PercentLabel" type="Label" parent="MainVBox/Body/PreviewArea/PreviewVBox/PreviewRow/InfoPanel/InfoVBox/BarOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.95)
+theme_override_font_sizes/font_size = 13
+text = "0%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EquipButton" type="Button" parent="MainVBox/Body/PreviewArea/PreviewVBox"]
+custom_minimum_size = Vector2(300, 54)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+text = "Equip Weapon ▶"
+
+[node name="StatsGrid" type="GridContainer" parent="MainVBox/Body"]
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+columns = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+
+[node name="ArsenalHeader" type="PanelContainer" parent="MainVBox"]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 2
+
+[node name="ArsenalTitle" type="Label" parent="MainVBox/ArsenalHeader"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.78, 0.2, 1)
+theme_override_font_sizes/font_size = 18
+text = "━━━━ Weapon Arsenal ━━━━"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ArsenalCount" type="Label" parent="MainVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.8)
+theme_override_font_sizes/font_size = 14
+text = "4 of 9 unlocked"
+horizontal_alignment = 1
+
+[node name="ArsenalPanel" type="PanelContainer" parent="MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Scroll" type="ScrollContainer" parent="MainVBox/ArsenalPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Rows" type="VBoxContainer" parent="MainVBox/ArsenalPanel/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="ToastLabel" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -70.0
+offset_right = -20.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.5, 1, 0.6, 1)
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1

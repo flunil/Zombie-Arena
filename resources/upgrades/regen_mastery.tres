@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/systems/upgrade_resource.gd" id="1_up"]
+
+[resource]
+script = ExtResource("1_up")
+upgrade_id = "regen_mastery"
+display_name = "Regen Mastery"
+description = "+1 HP every second"
+icon_color = Color(0.5,1,0.7, 1)
+stackable = true
+rarity = 1

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ConTelegraphFamily" format=3 uid="uid://yha7k0oyksp"]
+
+[ext_resource type="Script" uid="uid://dpk4h0oonxyrf" path="res://addons/constructive_telegraphs/src/con_telegraph_family.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+internal_name = &"WeaponRange"
+base_color = Color(0.647059, 1, 0.6, 0.2)
+base_outline_color = Color(0.647059, 1, 0.6, 1)
+fill_color = Color(0.647059, 1, 0.6, 0.32)
+fill_highlight_color = Color(0.78, 1, 0.72, 0.5)
+outline_mode = 2
+pattern_1_frequency = 0.6
+pattern_1_amplitude = 0.9
+pattern_1_speed = 0.08

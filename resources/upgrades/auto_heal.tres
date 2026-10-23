@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/systems/upgrade_resource.gd" id="1_up"]
+
+[resource]
+script = ExtResource("1_up")
+upgrade_id = "auto_heal"
+display_name = "Self Heal"
+description = "+2 HP every second"
+icon_color = Color(0.3, 0.9, 0.4, 1)
+stackable = true
+rarity = 1

@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://shaders/vfx/smoke.gdshader" id="1_smoke"]
+[ext_resource type="Texture2D" path="res://assets/vfx/smoke_sheet.png" id="2_tex"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_smoke")
+shader_parameter/particles_anim_h_frames = 4
+shader_parameter/particles_anim_v_frames = 2
+shader_parameter/texture_albedo = ExtResource("2_tex")

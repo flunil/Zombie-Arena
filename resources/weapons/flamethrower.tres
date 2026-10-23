@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_resource.gd" id="1_flam"]
+
+[resource]
+script = ExtResource("1_flam")
+weapon_id = "flamethrower"
+display_name = "Flamethrower"
+damage = 0.5
+fire_rate = 16.0
+ammo_max = 200
+reload_time = 2.5
+spread = 0.1
+max_range = 5
+bullet_speed = 12.0
+bullet_color = Color(1, 0.4, 0.05, 1)
+bullet_scale = 2.2
+unlock_wave = 8

@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://shaders/vfx/muzzle_flash.gdshader" id="1_flash"]
+[ext_resource type="Texture2D" path="res://assets/vfx/muzzle_flash_sheet.png" id="2_tex"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_flash")
+shader_parameter/particles_anim_h_frames = 4
+shader_parameter/particles_anim_v_frames = 1
+shader_parameter/texture_albedo = ExtResource("2_tex")

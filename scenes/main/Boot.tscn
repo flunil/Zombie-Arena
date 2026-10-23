@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dwh1ykskablhg"]
+
+[node name="Boot" type="Node3D" unique_id=1027082299]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=740807201]
+
+[node name="InfoLabel" type="Label" parent="CanvasLayer" unique_id=112901783]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -151.0
+offset_top = -37.5
+offset_right = 151.0
+offset_bottom = 37.5
+text = "Zombie Arena 3D
+Placeholder scene — Phase 0
+(Phase 1 will replace it with Arena.tscn)"

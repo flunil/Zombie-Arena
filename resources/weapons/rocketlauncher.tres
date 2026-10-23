@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_resource.gd" id="1_rokt"]
+
+[resource]
+script = ExtResource("1_rokt")
+weapon_id = "rocketlauncher"
+display_name = "Rocket Launcher"
+damage = 150.0
+fire_rate = 0.8
+ammo_max = 4
+reload_time = 3.0
+spread = 0.01
+max_range = 11
+bullet_speed = 40.0
+explosion_radius = 5.0
+bullet_color = Color(1, 0.9, 0.2, 1)
+bullet_scale = 1.6
+unlock_wave = 10

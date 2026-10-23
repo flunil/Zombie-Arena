@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://yp3nl67th3g3"]
+
+[ext_resource type="Script" uid="uid://ci1sxb3j1vsnw" path="res://scripts/systems/game_over_screen.gd" id="1_0pcqs"]
+
+[node name="GameOverScreen" type="Control" unique_id=653331287]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_0pcqs")
+
+[node name="Center" type="CenterContainer" parent="." unique_id=517516256]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBox" type="VBoxContainer" parent="Center" unique_id=1830581844]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="TitleLabel" type="Label" parent="Center/VBox" unique_id=1685992602]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.35, 0.3, 1)
+theme_override_font_sizes/font_size = 56
+text = "Game Over"
+horizontal_alignment = 1
+
+[node name="WavesLabel" type="Label" parent="Center/VBox" unique_id=1775040549]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Waves Cleared: 0"
+horizontal_alignment = 1
+
+[node name="KillsLabel" type="Label" parent="Center/VBox" unique_id=1901104185]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Total Kills: 0"
+horizontal_alignment = 1
+
+[node name="GoldLabel" type="Label" parent="Center/VBox" unique_id=1222340252]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Gold Earned: 0"
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="Center/VBox" unique_id=1989210593]
+custom_minimum_size = Vector2(300, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Play Again"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_resource.gd" id="1_shtg"]
+
+[resource]
+script = ExtResource("1_shtg")
+weapon_id = "shotgun"
+display_name = "Shotgun"
+damage = 15.0
+fire_rate = 2.0
+ammo_max = 8
+reload_time = 2.5
+spread = 0.18
+max_range = 6
+bullet_speed = 35.0
+pellets = 5
+bullet_color = Color(1, 0.8, 0.3, 1)
+bullet_scale = 1.2
+unlock_wave = 3

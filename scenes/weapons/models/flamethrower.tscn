@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dfo3odlsd6gl6"]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_range_stats.gd" id="wrs"]
+
+[ext_resource type="PackedScene" uid="uid://dciak2yoqnmr5" path="res://assets/models/weapons/TF2 flamethrower by mario tofani - djC1ShUqIXf.glb" id="1_bph7w"]
+
+[node name="flamethrower" type="Node3D" unique_id=1411648789]
+script = ExtResource("wrs")
+range_slot = 0
+
+[node name="TF2 flamethrower by mario tofani - djC1ShUqIXf" parent="." unique_id=510433734 instance=ExtResource("1_bph7w")]
+transform = Transform3D(0.029703509, 0, 0.6993695, 0, 0.7, 0, -0.6993695, 0, 0.029703509, -0.052237153, -0.08714658, -0.32958388)
+

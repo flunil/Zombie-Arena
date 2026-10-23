@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://do8h2ao7u63fv"]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_range_stats.gd" id="wrs"]
+
+[ext_resource type="PackedScene" uid="uid://ccsyeinhdybbo" path="res://assets/models/weapons/Assault Rifle by Zsky - XGeBGFQxYg.glb" id="1_lofk5"]
+
+[node name="ak47" type="Node3D" unique_id=1400300574]
+script = ExtResource("wrs")
+range_slot = 5
+
+[node name="Assault Rifle by Zsky - XGeBGFQxYg" parent="." unique_id=658613498 instance=ExtResource("1_lofk5")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.0013497323, 0, 0)
+

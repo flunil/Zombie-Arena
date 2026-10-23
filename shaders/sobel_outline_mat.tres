@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bg6crnqnsu0u4"]
+
+[ext_resource type="Shader" uid="uid://emkh7h1wu5v" path="res://shaders/sobel_outline.gdshader" id="1_sobel"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_sobel")

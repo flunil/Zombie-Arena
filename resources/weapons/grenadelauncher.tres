@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_resource.gd" id="1_grnd"]
+
+[resource]
+script = ExtResource("1_grnd")
+weapon_id = "grenadelauncher"
+display_name = "Grenade Launcher"
+damage = 80.0
+fire_rate = 1.5
+ammo_max = 6
+reload_time = 2.5
+spread = 0.02
+max_range = 8
+bullet_speed = 25.0
+explosion_radius = 3.0
+bullet_color = Color(1, 0.55, 0.1, 1)
+bullet_scale = 1.5
+unlock_wave = 7

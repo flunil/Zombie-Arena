@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b73jqtqm8dtpi"]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_range_stats.gd" id="wrs"]
+
+[ext_resource type="PackedScene" uid="uid://fcre5a3gqg3o" path="res://assets/models/weapons/Flat Guns West/Shotgun_Auto_West.fbx" id="1_f6ok2"]
+
+[node name="heavymg" type="Node3D" unique_id=447802234]
+script = ExtResource("wrs")
+range_slot = 7
+
+[node name="Shotgun_Auto_West" parent="." unique_id=1286259004 instance=ExtResource("1_f6ok2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.043171167, 0, -0.123499036)
+

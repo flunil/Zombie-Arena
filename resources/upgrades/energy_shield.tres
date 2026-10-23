@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/systems/upgrade_resource.gd" id="1_up"]
+
+[resource]
+script = ExtResource("1_up")
+upgrade_id = "energy_shield"
+display_name = "Energy Shield"
+description = "+30 shield that absorbs damage first"
+icon_color = Color(0.25, 0.5, 1, 1)
+stackable = false
+rarity = 1

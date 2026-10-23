@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_resource.gd" id="1_ak47"]
+
+[resource]
+script = ExtResource("1_ak47")
+weapon_id = "ak47"
+display_name = "AK-47"
+damage = 25.0
+fire_rate = 10.0
+ammo_max = 30
+reload_time = 2.0
+spread = 0.02
+max_range = 10
+bullet_speed = 30.0

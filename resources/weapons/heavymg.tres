@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_resource.gd" id="1_hvmg"]
+
+[resource]
+script = ExtResource("1_hvmg")
+weapon_id = "heavymg"
+display_name = "Heavy MG"
+damage = 20.0
+fire_rate = 15.0
+ammo_max = 100
+reload_time = 3.0
+spread = 0.05
+max_range = 12
+bullet_speed = 45.0
+move_mult = 0.7
+bullet_color = Color(1, 0.45, 0.35, 1)
+unlock_wave = 5

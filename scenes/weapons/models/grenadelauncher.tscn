@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://1pqa4a7vfash"]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_range_stats.gd" id="wrs"]
+
+[ext_resource type="PackedScene" uid="uid://bgffhx2lnemri" path="res://assets/models/weapons/Bazooka by CreativeTrio - eJNzLpBsEt.glb" id="1_o65gi"]
+
+[node name="grenadelauncher" type="Node3D" unique_id=1616892336]
+script = ExtResource("wrs")
+range_slot = 3
+
+[node name="Root Scene" parent="." unique_id=1008092212 instance=ExtResource("1_o65gi")]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.1423139, -0.028685525, 0.07132015)
+

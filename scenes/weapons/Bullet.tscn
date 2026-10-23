@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://hxcxj6vs0sf8"]
+
+[ext_resource type="Script" uid="uid://0s8xdtnkeikx" path="res://scripts/weapons/bullet.gd" id="1_uda7o"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_fkow1"]
+radius = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8dtc"]
+albedo_color = Color(0.5561278, 0.5197816, 0, 1)
+emission_enabled = true
+emission = Color(1, 0.85, 0.4, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_yxpqg"]
+radius = 0.06
+height = 0.12
+
+[node name="Bullet" type="Area3D" unique_id=1115119200]
+collision_layer = 8
+collision_mask = 3
+script = ExtResource("1_uda7o")
+
+[node name="Collision" type="CollisionShape3D" parent="." unique_id=752829783]
+shape = SubResource("SphereShape3D_fkow1")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=558724116]
+material_override = SubResource("StandardMaterial3D_c8dtc")
+mesh = SubResource("SphereMesh_yxpqg")

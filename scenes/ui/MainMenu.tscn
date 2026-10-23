@@ -1,0 +1,718 @@
+[gd_scene format=3 uid="uid://c0sm5juo2ohpa"]
+
+[ext_resource type="Script" uid="uid://cptrjka7nth4s" path="res://scripts/systems/main_menu.gd" id="1_mnu"]
+[ext_resource type="Texture2D" uid="uid://dx4j8nsgovr77" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f-removebg-preview.png" id="2_plate"]
+[ext_resource type="Texture2D" uid="uid://dkjw0b2w6sy7p" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f1-removebg-preview.png" id="3_coin"]
+[ext_resource type="Texture2D" uid="uid://cnkeaqe6u6xth" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f2-removebg-preview.png" id="4_gem"]
+[ext_resource type="Texture2D" uid="uid://di03rufocrmhk" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f3-removebg-preview.png" id="5_gear"]
+[ext_resource type="Texture2D" uid="uid://l4g4w33w0qpj" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f4-removebg-preview.png" id="6_rew"]
+[ext_resource type="Texture2D" uid="uid://bneyh6whyur0h" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f5-removebg-preview.png" id="7_shop"]
+[ext_resource type="Texture2D" uid="uid://b2ua77wmtltey" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f6-removebg-preview.png" id="8_inv"]
+[ext_resource type="Texture2D" uid="uid://dr5w1o3j8wjfr" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f7-removebg-preview.png" id="9_play"]
+[ext_resource type="Texture2D" uid="uid://c1cjudtb02h5l" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f8-removebg-preview.png" id="10_map"]
+[ext_resource type="Texture2D" uid="uid://ccuwradgqdykw" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f9-removebg-preview.png" id="11_weap"]
+[ext_resource type="Texture2D" uid="uid://dgirek1xf3vbh" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f10-removebg-preview.png" id="12_upg"]
+[ext_resource type="Texture2D" uid="uid://bn2ibx0hgamhk" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f11-removebg-preview.png" id="13_prog"]
+[ext_resource type="Texture2D" uid="uid://dyyrplb8sa0mh" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f12-removebg-preview.png" id="14_dail"]
+[ext_resource type="Texture2D" uid="uid://wk3715uojm50" path="res://assets/ui/ui/651ebf57-8964-4178-80e3-c28ab19aa75f13-removebg-preview.png" id="15_spin"]
+[ext_resource type="Texture2D" uid="uid://b14njff1bb5gf" path="res://assets/ui/Vector_UI_Pack_dobo_ui/Modals/profile_image.png" id="16_prof"]
+[ext_resource type="Texture2D" uid="uid://bjvevojfaaj8q" path="res://assets/ui/Vector_UI_Pack_dobo_ui/Icons/128px/plusV1_icon_128px.png" id="17_plus"]
+[ext_resource type="Texture2D" uid="uid://bc08dpwfhuelf" path="res://assets/ui/Vector_UI_Pack_dobo_ui/Buttons/buttonCircle_red.png" id="18_dot"]
+[ext_resource type="Texture2D" uid="uid://dxhyr4o7mrimk" path="res://assets/ui/Vector_UI_Pack_dobo_ui/Buttons/buttonSquare_green.png" id="19_sqg"]
+[ext_resource type="Texture2D" uid="uid://bkfbnpwcxki18" path="res://assets/ui/ui/4c9f1a15-4c82-4b7a-9f75-fd62738dd65b.png" id="21_8rx73"]
+[ext_resource type="Texture2D" uid="uid://b0jb024r10kae" path="res://assets/ui/ui/Gemini_Generated_Image_8y1eap8y1eap8y1e1.png" id="26_bg"]
+
+[sub_resource type="StyleBoxTexture" id="sb_rew"]
+texture = ExtResource("6_rew")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+
+[sub_resource type="StyleBoxTexture" id="sb_rew_p"]
+texture = ExtResource("6_rew")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+modulate_color = Color(0.78, 0.78, 0.78, 1)
+
+[sub_resource type="StyleBoxTexture" id="sb_shop"]
+texture = ExtResource("7_shop")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+
+[sub_resource type="StyleBoxTexture" id="sb_shop_p"]
+texture = ExtResource("7_shop")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+modulate_color = Color(0.78, 0.78, 0.78, 1)
+
+[sub_resource type="StyleBoxTexture" id="sb_inv"]
+texture = ExtResource("8_inv")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+
+[sub_resource type="StyleBoxTexture" id="sb_inv_p"]
+texture = ExtResource("8_inv")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+modulate_color = Color(0.78, 0.78, 0.78, 1)
+
+[sub_resource type="StyleBoxTexture" id="sb_dail"]
+texture = ExtResource("14_dail")
+texture_margin_left = 26.0
+texture_margin_top = 26.0
+texture_margin_right = 26.0
+texture_margin_bottom = 26.0
+
+[sub_resource type="StyleBoxTexture" id="sb_dail_p"]
+texture = ExtResource("14_dail")
+texture_margin_left = 26.0
+texture_margin_top = 26.0
+texture_margin_right = 26.0
+texture_margin_bottom = 26.0
+modulate_color = Color(0.78, 0.78, 0.78, 1)
+
+[sub_resource type="StyleBoxTexture" id="sb_spin"]
+texture = ExtResource("15_spin")
+texture_margin_left = 26.0
+texture_margin_top = 26.0
+texture_margin_right = 26.0
+texture_margin_bottom = 26.0
+
+[sub_resource type="StyleBoxTexture" id="sb_spin_p"]
+texture = ExtResource("15_spin")
+texture_margin_left = 26.0
+texture_margin_top = 26.0
+texture_margin_right = 26.0
+texture_margin_bottom = 26.0
+modulate_color = Color(0.78, 0.78, 0.78, 1)
+
+[sub_resource type="StyleBoxTexture" id="sb_play"]
+texture = ExtResource("9_play")
+texture_margin_left = 32.0
+texture_margin_top = 28.0
+texture_margin_right = 32.0
+texture_margin_bottom = 28.0
+
+[sub_resource type="StyleBoxTexture" id="sb_play_p"]
+texture = ExtResource("9_play")
+texture_margin_left = 32.0
+texture_margin_top = 28.0
+texture_margin_right = 32.0
+texture_margin_bottom = 28.0
+modulate_color = Color(0.8, 0.8, 0.8, 1)
+
+[sub_resource type="StyleBoxTexture" id="sb_map"]
+texture = ExtResource("10_map")
+texture_margin_left = 30.0
+texture_margin_top = 26.0
+texture_margin_right = 30.0
+texture_margin_bottom = 26.0
+
+[sub_resource type="StyleBoxTexture" id="sb_map_p"]
+texture = ExtResource("10_map")
+texture_margin_left = 30.0
+texture_margin_top = 26.0
+texture_margin_right = 30.0
+texture_margin_bottom = 26.0
+modulate_color = Color(0.78, 0.78, 0.78, 1)
+
+[sub_resource type="StyleBoxTexture" id="sb_weap"]
+texture = ExtResource("11_weap")
+texture_margin_left = 30.0
+texture_margin_top = 26.0
+texture_margin_right = 30.0
+texture_margin_bottom = 26.0
+
+[sub_resource type="StyleBoxTexture" id="sb_weap_p"]
+texture = ExtResource("11_weap")
+texture_margin_left = 30.0
+texture_margin_top = 26.0
+texture_margin_right = 30.0
+texture_margin_bottom = 26.0
+modulate_color = Color(0.78, 0.78, 0.78, 1)
+
+[sub_resource type="StyleBoxTexture" id="sb_upg"]
+texture = ExtResource("12_upg")
+texture_margin_left = 30.0
+texture_margin_top = 26.0
+texture_margin_right = 30.0
+texture_margin_bottom = 26.0
+
+[sub_resource type="StyleBoxTexture" id="sb_upg_p"]
+texture = ExtResource("12_upg")
+texture_margin_left = 30.0
+texture_margin_top = 26.0
+texture_margin_right = 30.0
+texture_margin_bottom = 26.0
+modulate_color = Color(0.78, 0.78, 0.78, 1)
+
+[sub_resource type="StyleBoxTexture" id="sb_prog"]
+texture = ExtResource("13_prog")
+texture_margin_left = 30.0
+texture_margin_top = 26.0
+texture_margin_right = 30.0
+texture_margin_bottom = 26.0
+
+[sub_resource type="StyleBoxTexture" id="sb_prog_p"]
+texture = ExtResource("13_prog")
+texture_margin_left = 30.0
+texture_margin_top = 26.0
+texture_margin_right = 30.0
+texture_margin_bottom = 26.0
+modulate_color = Color(0.78, 0.78, 0.78, 1)
+
+[sub_resource type="StyleBoxTexture" id="sb_plus"]
+content_margin_left = 8.0
+content_margin_top = 6.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+texture = ExtResource("19_sqg")
+texture_margin_left = 14.0
+texture_margin_top = 14.0
+texture_margin_right = 14.0
+texture_margin_bottom = 14.0
+
+[sub_resource type="StyleBoxTexture" id="sb_gear"]
+texture = ExtResource("5_gear")
+texture_margin_left = 14.0
+texture_margin_top = 14.0
+texture_margin_right = 14.0
+texture_margin_bottom = 14.0
+
+[sub_resource type="StyleBoxTexture" id="sb_gear_p"]
+texture = ExtResource("5_gear")
+texture_margin_left = 14.0
+texture_margin_top = 14.0
+texture_margin_right = 14.0
+texture_margin_bottom = 14.0
+modulate_color = Color(0.78, 0.78, 0.78, 1)
+
+[node name="MainMenu" type="Control" unique_id=140605929]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mnu")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1889517113]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("26_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="LeftColumn" type="VBoxContainer" parent="." unique_id=1102266778]
+layout_mode = 1
+offset_left = 8.0
+offset_top = 186.0
+offset_right = 120.0
+offset_bottom = 542.0
+theme_override_constants/separation = 10
+
+[node name="DailyRewardButton" type="Button" parent="LeftColumn" unique_id=292493492]
+custom_minimum_size = Vector2(112, 112)
+layout_mode = 2
+theme_override_styles/normal = SubResource("sb_rew")
+theme_override_styles/pressed = SubResource("sb_rew_p")
+theme_override_styles/hover = SubResource("sb_rew")
+theme_override_styles/focus = SubResource("sb_rew")
+
+[node name="Dot" type="TextureRect" parent="LeftColumn/DailyRewardButton" unique_id=853498230]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 26.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("18_dot")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ShopButton" type="Button" parent="LeftColumn" unique_id=2033543817]
+custom_minimum_size = Vector2(112, 112)
+layout_mode = 2
+theme_override_styles/normal = SubResource("sb_shop")
+theme_override_styles/pressed = SubResource("sb_shop_p")
+theme_override_styles/hover = SubResource("sb_shop")
+theme_override_styles/focus = SubResource("sb_shop")
+
+[node name="Dot" type="TextureRect" parent="LeftColumn/ShopButton" unique_id=656061677]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 26.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("18_dot")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InventoryButton" type="Button" parent="LeftColumn" unique_id=1868038420]
+custom_minimum_size = Vector2(112, 112)
+layout_mode = 2
+theme_override_styles/normal = SubResource("sb_inv")
+theme_override_styles/pressed = SubResource("sb_inv_p")
+theme_override_styles/hover = SubResource("sb_inv")
+theme_override_styles/focus = SubResource("sb_inv")
+metadata/action = "soon"
+
+[node name="Dot" type="TextureRect" parent="LeftColumn/InventoryButton" unique_id=380372483]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 26.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("18_dot")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RightColumn" type="VBoxContainer" parent="." unique_id=796773222]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -130.0
+offset_top = 186.0
+offset_right = -8.0
+offset_bottom = 436.0
+grow_horizontal = 0
+theme_override_constants/separation = 10
+
+[node name="MissionsButton" type="Button" parent="RightColumn" unique_id=300482709]
+custom_minimum_size = Vector2(122, 120)
+layout_mode = 2
+theme_override_styles/normal = SubResource("sb_dail")
+theme_override_styles/pressed = SubResource("sb_dail_p")
+theme_override_styles/hover = SubResource("sb_dail")
+theme_override_styles/focus = SubResource("sb_dail")
+
+[node name="Dot" type="TextureRect" parent="RightColumn/MissionsButton" unique_id=572788122]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 26.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("18_dot")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LuckyButton" type="Button" parent="RightColumn" unique_id=329192822]
+custom_minimum_size = Vector2(122, 120)
+layout_mode = 2
+theme_override_styles/normal = SubResource("sb_spin")
+theme_override_styles/pressed = SubResource("sb_spin_p")
+theme_override_styles/hover = SubResource("sb_spin")
+theme_override_styles/focus = SubResource("sb_spin")
+metadata/action = "soon"
+
+[node name="Dot" type="TextureRect" parent="RightColumn/LuckyButton" unique_id=1687980306]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 26.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("18_dot")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StartButton" type="Button" parent="." unique_id=900654522]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -260.0
+offset_top = -330.0
+offset_right = 260.0
+offset_bottom = -157.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/normal = SubResource("sb_play")
+theme_override_styles/pressed = SubResource("sb_play_p")
+theme_override_styles/hover = SubResource("sb_play")
+theme_override_styles/focus = SubResource("sb_play")
+
+[node name="BottomBar" type="HBoxContainer" parent="." unique_id=888040874]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -150.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="MapButton" type="Button" parent="BottomBar" unique_id=589858316]
+custom_minimum_size = Vector2(168, 140)
+layout_mode = 2
+theme_override_styles/normal = SubResource("sb_map")
+theme_override_styles/pressed = SubResource("sb_map_p")
+theme_override_styles/hover = SubResource("sb_map")
+theme_override_styles/focus = SubResource("sb_map")
+metadata/action = "soon"
+
+[node name="Dot" type="TextureRect" parent="BottomBar/MapButton" unique_id=1688162386]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 26.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("18_dot")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="WeaponsButton" type="Button" parent="BottomBar" unique_id=2063488506]
+custom_minimum_size = Vector2(168, 140)
+layout_mode = 2
+theme_override_styles/normal = SubResource("sb_weap")
+theme_override_styles/pressed = SubResource("sb_weap_p")
+theme_override_styles/hover = SubResource("sb_weap")
+theme_override_styles/focus = SubResource("sb_weap")
+metadata/action = "scene:res://scenes/ui/WeaponList.tscn"
+
+[node name="Dot" type="TextureRect" parent="BottomBar/WeaponsButton" unique_id=127078210]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 26.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("18_dot")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="UpgradeButton" type="Button" parent="BottomBar" unique_id=767058786]
+custom_minimum_size = Vector2(168, 140)
+layout_mode = 2
+theme_override_styles/normal = SubResource("sb_upg")
+theme_override_styles/pressed = SubResource("sb_upg_p")
+theme_override_styles/hover = SubResource("sb_upg")
+theme_override_styles/focus = SubResource("sb_upg")
+metadata/action = "shop"
+
+[node name="Dot" type="TextureRect" parent="BottomBar/UpgradeButton" unique_id=399898613]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 26.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("18_dot")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ProgressButton" type="Button" parent="BottomBar" unique_id=2074131128]
+custom_minimum_size = Vector2(168, 140)
+layout_mode = 2
+theme_override_styles/normal = SubResource("sb_prog")
+theme_override_styles/pressed = SubResource("sb_prog_p")
+theme_override_styles/hover = SubResource("sb_prog")
+theme_override_styles/focus = SubResource("sb_prog")
+metadata/action = "soon"
+
+[node name="Dot" type="TextureRect" parent="BottomBar/ProgressButton" unique_id=2015518146]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 26.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("18_dot")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TopBar" type="HBoxContainer" parent="." unique_id=1360878087]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = -8.0
+offset_bottom = 90.0
+grow_horizontal = 2
+theme_override_constants/separation = 10
+
+[node name="ProfilePlate" type="Control" parent="TopBar" unique_id=1880297630]
+custom_minimum_size = Vector2(236, 78)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Bg" type="TextureRect" parent="TopBar/ProfilePlate" unique_id=220284384]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_plate")
+expand_mode = 1
+
+[node name="Avatar" type="TextureRect" parent="TopBar/ProfilePlate" unique_id=1428309453]
+layout_mode = 1
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 69.0
+offset_bottom = 67.0
+mouse_filter = 2
+texture = ExtResource("16_prof")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NameLabel" type="Label" parent="TopBar/ProfilePlate" unique_id=1985458482]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33
+anchor_top = 0.08
+anchor_right = 0.95
+anchor_bottom = 0.44
+offset_right = -4.0
+offset_bottom = -2.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.85)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 20
+text = "Player"
+vertical_alignment = 1
+
+[node name="KillsPrefix" type="Label" parent="TopBar/ProfilePlate" unique_id=1333664456]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33
+anchor_top = 0.52
+anchor_right = 0.6
+anchor_bottom = 0.8
+offset_right = -2.0
+offset_bottom = -2.0
+theme_override_colors/font_color = Color(1, 0.9, 0.7, 1)
+theme_override_font_sizes/font_size = 12
+text = "Kills:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="KillsValue" type="Label" parent="TopBar/ProfilePlate" unique_id=55712898]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.61
+anchor_top = 0.52
+anchor_right = 0.94
+anchor_bottom = 0.8
+offset_right = -2.0
+offset_bottom = -2.0
+theme_override_colors/font_color = Color(1, 0.84, 0.3, 1)
+theme_override_font_sizes/font_size = 13
+text = "0"
+vertical_alignment = 1
+
+[node name="TopSpacer" type="Control" parent="TopBar" unique_id=507434677]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GoldChip" type="TextureRect" parent="TopBar" unique_id=1984793328]
+custom_minimum_size = Vector2(128, 49)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+texture = ExtResource("3_coin")
+expand_mode = 1
+
+[node name="GoldValue" type="Label" parent="TopBar/GoldChip" unique_id=626339397]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.36
+anchor_top = 0.24
+anchor_right = 0.97
+anchor_bottom = 0.76
+offset_right = -2.0
+offset_bottom = -2.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.9)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 16
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GoldPlus" type="Button" parent="TopBar" unique_id=1557539474]
+custom_minimum_size = Vector2(44, 44)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("sb_plus")
+theme_override_styles/pressed = SubResource("sb_plus")
+theme_override_styles/hover = SubResource("sb_plus")
+theme_override_styles/focus = SubResource("sb_plus")
+metadata/action = "shop"
+
+[node name="PlusIcon" type="TextureRect" parent="TopBar/GoldPlus" unique_id=2014688742]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -13.0
+offset_right = 13.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("17_plus")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="GemChip" type="TextureRect" parent="TopBar" unique_id=1154563433]
+custom_minimum_size = Vector2(113, 48)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+texture = ExtResource("4_gem")
+expand_mode = 1
+
+[node name="GemValue" type="Label" parent="TopBar/GemChip" unique_id=1512951487]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.36
+anchor_top = 0.24
+anchor_right = 0.97
+anchor_bottom = 0.76
+offset_right = -2.0
+offset_bottom = -2.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.9)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 15
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GemPlus" type="Button" parent="TopBar" unique_id=1402365139]
+custom_minimum_size = Vector2(44, 44)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("sb_plus")
+theme_override_styles/pressed = SubResource("sb_plus")
+theme_override_styles/hover = SubResource("sb_plus")
+theme_override_styles/focus = SubResource("sb_plus")
+metadata/action = "soon"
+
+[node name="PlusIcon" type="TextureRect" parent="TopBar/GemPlus" unique_id=706255129]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -13.0
+offset_right = 13.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("17_plus")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SettingsButton" type="Button" parent="TopBar" unique_id=1621383250]
+custom_minimum_size = Vector2(50, 52)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("sb_gear")
+theme_override_styles/pressed = SubResource("sb_gear_p")
+theme_override_styles/hover = SubResource("sb_gear")
+theme_override_styles/focus = SubResource("sb_gear")
+
+[node name="ToastLabel" type="Label" parent="." unique_id=1233558084]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = -430.0
+offset_right = -12.0
+offset_bottom = -390.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0.92, 0.65, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.9)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1063585464]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 89.0
+offset_right = 1924.0
+offset_bottom = 1081.0
+rotation = 0.4902106
+scale = Vector2(0.2, 0.2)
+icon = ExtResource("21_8rx73")
+flat = true

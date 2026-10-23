@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b5bphwgg6n2gr"]
+
+[ext_resource type="Script" uid="uid://dacabwtc7mn6h" path="res://scripts/weapons/ak47.gd" id="1_bboe4"]
+[ext_resource type="Resource" path="res://resources/weapons/ak47.tres" id="2_24ubs"]
+[ext_resource type="PackedScene" uid="uid://hxcxj6vs0sf8" path="res://scenes/weapons/Bullet.tscn" id="3_n0jay"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j36ir"]
+albedo_color = Color(0.15, 0.15, 0.15, 1)
+metallic = 0.6
+roughness = 0.5
+
+[sub_resource type="BoxMesh" id="BoxMesh_jhblm"]
+size = Vector3(0.08, 0.12, 0.55)
+
+[node name="AK47" type="Node3D" unique_id=160050901]
+script = ExtResource("1_bboe4")
+weapon_data = ExtResource("2_24ubs")
+bullet_scene = ExtResource("3_n0jay")
+
+[node name="GunMesh" type="MeshInstance3D" parent="." unique_id=693179255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18, 0.1, -0.3)
+material_override = SubResource("StandardMaterial3D_j36ir")
+mesh = SubResource("BoxMesh_jhblm")
